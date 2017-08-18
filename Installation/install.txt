@@ -1,0 +1,18 @@
+1. Download latest source code(Full distribution, with sources) from http://spinroot.com/spin/Src/index.html
+2. Install yacc on your system 
+sudo apt-get install byacc Tk8.5
+3.Unpack the spin source code and compile.
+gunzip *.tar.gz
+tar -xf *.tar
+cd Src*
+make
+4. If its compiled without error, then copy the executable into your system path. 
+sudo cp spin /usr/local/bin
+5. Check the correctness of your installation using version command
+spin -V
+6. Move to iSpin folder in spin source code and install ispin
+cd ../iSpin
+sudo sh install.sh
+
+Now you can invoke ispin interface using 'ispin' command
+ 
