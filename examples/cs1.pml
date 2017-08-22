@@ -4,7 +4,7 @@ active[2] proctype P()
 {
   (!busy) -> busy =true;
   mutex++;
-  printf("P-%d in CS \n", _pid);
+  CS: printf("P-%d in CS \n", _pid);
    assert(mutex <=1);
   mutex--;
   busy = false;
